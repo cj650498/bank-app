@@ -1,0 +1,30 @@
+# Gradle-specific directories
+.gradle/
+build/
+
+# IDE-specific files
+.vscode/
+*.iml
+
+# Operating System Files
+.DS_Store
+
+# Generated directories and files
+bin/
+target/
+out/
+
+# Database-specific directories
+/database/mysql-data/
+
+# Other project-specific files
+docker-compose.yml
+
+# Build artifacts
+build/
+
+# Project-specific files
+.env
+
+# Ignore compiled Java classes
+*.class
