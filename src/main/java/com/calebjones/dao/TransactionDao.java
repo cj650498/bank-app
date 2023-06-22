@@ -34,7 +34,8 @@ public class TransactionDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
+
+    } // End createTransaction
 
     public static List<Transaction> getTransactionsByAccountId(int accountId) {
         List<Transaction> transactions = new ArrayList<>();
@@ -63,7 +64,8 @@ public class TransactionDao {
         }
 
         return transactions;
-    }
+
+    } // End getTransactionsByAccountId
 
     public static void deleteTransaction(int transactionId) {
         try (Connection connection = DBConnectionManager.getConnection()) {
@@ -76,7 +78,8 @@ public class TransactionDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
+
+    } // End deleteTransaction
 
     public static List<Transaction> getAllTransactions() {
         List<Transaction> transactions = new ArrayList<>();
@@ -103,5 +106,7 @@ public class TransactionDao {
         }
 
         return transactions;
-    }
-}
+
+    } // End getAllTransactions
+
+} // End Class TransactionDao

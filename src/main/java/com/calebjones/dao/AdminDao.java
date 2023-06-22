@@ -35,7 +35,8 @@ public class AdminDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: createAdmin
+
+    } // End Method: createAdmin
 
     public static Admin getAdminById(int adminId) {
         Admin admin = null;
@@ -62,7 +63,8 @@ public class AdminDao {
         }
 
         return admin;
-    } // END: getAdminById
+
+    } // End getAdminById
 
     public static void updateAdmin(Admin admin) {
         try (Connection connection = DBConnectionManager.getConnection()) {
@@ -80,7 +82,8 @@ public class AdminDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: updateAdmin
+
+    } // End updateAdmin
 
     public static void deleteAdmin(int adminId) {
         try (Connection connection = DBConnectionManager.getConnection()) {
@@ -94,7 +97,7 @@ public class AdminDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: deleteAdmin
+    } // End deleteAdmin
 
     public static List<Admin> getAllAdmins() {
         List<Admin> admins = new ArrayList<>();
@@ -117,6 +120,6 @@ public class AdminDao {
             e.printStackTrace();
         }
         return admins;
-    } // END: getAllAdmins
+    } // End getAllAdmins
 
-} // END CLASS
+} // End Class AdminDao

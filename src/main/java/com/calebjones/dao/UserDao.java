@@ -38,7 +38,8 @@ public class UserDao {
             // Handle any potential exceptions
             e.printStackTrace();
         }
-    } // END: createUser
+        
+    } // End createUser
 
     public static User getUserById(int userId) {
         User user = null;
@@ -65,7 +66,8 @@ public class UserDao {
         }
 
         return user;
-    } // END: getUserById
+
+    } // End getUserById
 
     public static void updateUser(User user) {
         try (Connection connection = DBConnectionManager.getConnection()) {
@@ -83,7 +85,8 @@ public class UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: updateUser
+
+    } // End updateUser
 
     public static void deleteUser(int userId) {
         try (Connection connection = DBConnectionManager.getConnection()) {
@@ -99,7 +102,8 @@ public class UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: deleteUser
+
+    } // End deleteUser
 
     public static List<User> getAllUsers() {
         List<User> users = new ArrayList<>();
@@ -123,7 +127,8 @@ public class UserDao {
         }
 
         return users;
-    } // END: getAllUsers
+
+    } // End getAllUsers
 
     public static int getUserCount() {
         int count = 0;
@@ -143,6 +148,7 @@ public class UserDao {
         }
 
         return count;
-    } // END: getUserCount
+
+    } // End getUserCount
     
-} // END CLASS
+} // End Class UserDao

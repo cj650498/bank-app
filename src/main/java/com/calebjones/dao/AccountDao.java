@@ -33,7 +33,8 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: createAccount
+
+    } // End createAccount
 
     public static Account getAccountById(int accountId) {
         Account account = null;
@@ -59,7 +60,8 @@ public class AccountDao {
         }
 
         return account;
-    } // END: getAccountById
+
+    } // End getAccountById
 
     public static List<Account> getAccountsByUserId(int userId) {
         List<Account> accounts = new ArrayList<>();
@@ -87,7 +89,8 @@ public class AccountDao {
         }
 
         return accounts;
-    } // END: getAccountsByUserId
+
+    } // End getAccountsByUserId
 
     public static void updateAccount(Account account) {
         try (Connection connection = DBConnectionManager.getConnection()) {
@@ -104,7 +107,8 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: updateAccount
+
+    } // End updateAccount
 
     public static void deleteAccount(int accountId) {
         try (Connection connection = DBConnectionManager.getConnection()) {
@@ -117,7 +121,8 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    } // END: deleteAccount
+
+    } // End deleteAccount
 
     public static List<Account> getAllAccounts() {
         List<Account> accounts = new ArrayList<>();
@@ -143,6 +148,7 @@ public class AccountDao {
         }
 
         return accounts;
-    } // END: getAllAccounts
+
+    } // End getAllAccounts
     
-} // END: Class AccountDao
+} // End Class AccountDao
