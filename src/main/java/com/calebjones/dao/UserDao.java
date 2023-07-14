@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.calebjones.database.DBConnectionManager;
-import com.calebjones.entities.User;
+import com.calebjones.models.User;
 
 public class UserDao {
     public static void createUser(User user) {

@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import com.calebjones.database.DBConnectionManager;
-import com.calebjones.entities.Admin;
+import com.calebjones.models.Admin;
 
 public class AdminDao {
 

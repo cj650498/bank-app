@@ -1,7 +1,7 @@
 package com.calebjones.dao;
 
 import com.calebjones.database.DBConnectionManager;
-import com.calebjones.entities.Account;
+import com.calebjones.models.Account;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
